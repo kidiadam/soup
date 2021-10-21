@@ -1,0 +1,34 @@
+{
+  "years": [
+    { "color": "cyan", "year": "1988", "title": "出生", "align": "text-sm-left" },
+    { "color": "green", "year": "2012", "title": "畢業於東吳大學政治系", "align": "text-sm-right" },
+    { "color": "pink", "year": "2013", "title": "進入新光三越", "align": "text-sm-left", "content": "於公司內擔任營業管理職位，並於2016年獲得升遷" },
+    { "color": "amber", "year": "2018", "title": "轉換人生跑道", "align": "text-sm-right", "content": "同年 6 月離開百貨公司職位，並於外面電腦補習班、線上付費課程進行前端知識技術學習" },
+    { "color": "orange", "year": "2019", "title": "前端工程師生涯起跑", "align": "text-sm-left", "content": "進入目前任職公司擔任前端工程師(微後端)" }
+  ],
+  "skills": [
+    { "name": "HTML：", "color": "light-blue", "value": 95},
+    { "name": "CSS / SASS：", "color": "light-green", "value": 90},
+    { "name": "Javascript / jQuery：", "color": "deep-orange", "value": 85},
+    { "name": "Ajax & API 串接：", "color": "pink darken-1", "value": 90},
+    { "name": "社群媒體串接：", "color": "orange lighten-1", "value": 75},
+    { "name": "Vue：", "color": "lime", "value": 80},
+    { "name": "Java：", "color": "blue-grey", "value": 25},
+    { "name": "PHP：", "color": "amber", "value": 40},
+    { "name": "SQL：", "color": "light-blue darken-4", "value": 50}
+  ],
+  "projects": [
+    { "name": "玩粉絲", "content": "玩粉絲為一套完整的行銷模組工具，提供客戶進行客製化的遊戲內容以及抽獎方式進行品牌行銷，此外亦透過 Line、FB 串接功能，取得參加者資料進行分析，主要透過 Java thymeleaf 模板與前端配合達到 MVC 架構。", "img": ["FP01.jpg", "FP02.jpg", "FP03.jpg", "FP04.jpg"] },
+    { "name": "小巴黎", "content": "小巴黎為公司經營之香氛品牌，其官網於電商平台 cyberbiz 進行上架，該平台使用 liquid 模板語法進行前端套版輸出，而在首頁、店鋪資訊、商品排版等，皆為例外進行程式客製，此外品牌在主顧客經營也於 Line Liff 內進行官方帳號網頁經營。", "img": ["DB03.jpg", "DB04.jpg", "DB05.jpg", "DB06.jpg"] },
+    { "name": "小巴黎-CMS", "content": "小巴黎為公司經營之香氛品牌，額外開發出一套 POS 系統，提供給櫃位銷售人員進行商品&活動之選取及銷售，與顧客 Line 聯繫，以及後勤人員可進行庫存 / 活動管理、業績分析…等，前端工作為一人獨自開發，使用 Vue-cli，並與後端人員進行 Java 協作開發，為團隊合作項目。", "img": ["DB01.jpg", "DB02.jpg", "FP03.jpg", "FP04.jpg"] },
+    { "name": "Porsche", "content": "Porsche 配合主要為活動 event 項目，其中包括新車款宣傳網頁、預約試乘表單，以及舉辦客製化圖片上傳投票競賽，與 edm 電子報製作，主要前端使用 Vue-cli 搭配後端 Php 進行開發。", "img": ["PS01.png", "PS02.png", "PS03.png", "PS04.png"] },
+    { "name": "公司官網", "content": "公司官網及其後台皆由 Vue-cli 進行開發，分前後台兩部分，前台主要負責後續維護，後台則為搭配後端 Php 程式進行獨自開發，主要進行廠商案例分享、部落格新增等功能，特色為仿前台輸出樣式，提供操作者進行所見即所得的編輯上架方式。", "img": ["TY01.jpg", "TY02.jpg", "TY03.jpg", "TY04.jpg"] },
+    { "name": "全聯福利熊", "content": "全聯主要為協助進行福利熊官網維護，此外在 2021 年配合開發共 6 檔的照片/繪畫上傳競賽活動，自前端至後端和資料庫，皆為獨自開發，並製作後台提供全聯人員進行各階段排名篩選與圖片上/下架。", "img": ["PX01.jpg", "PX02.jpg", "PX03.jpg", "PX04.jpg", "PX05.jpg"] },
+    { "name": "王品集團", "content": "自 2020 開始，協助王品旗下品牌-聚火鍋進行網頁遊戲互動，為品牌帶來良好效益，大獲顧客好評，故而後續再為其旗下品牌藝奇、享鴨設計製作不同遊戲互動項目，並透過 FB 社群媒體登入功能，取得用戶資訊並進行分析。", "img": ["WP01.jpg", "WP02.jpg", "WP03.jpg", "WP04.jpg", "WP05.jpg"] },
+    { "name": "其他專案", "content": "協助其他不同市場類別之客戶需求，包括各檔期 event、頁面展示、表單蒐集獲贈獎回饋…等。", "img": ["OT01.jpg", "OT02.jpg", "OT03.jpg", "OT04.jpg", "OT05.jpg", "OT06.jpg"] }
+  ],
+  "profile": ["H", "e", "l", "l", "o ", "W", "o", "r", "l", "d", ", ", "我", "是", " J", "e", "r", "r", "y", "，", "<br>",
+    "目", "前", "在", "網", "路", "行", "銷", "公", "司", "擔", "任", "前", "端", "工", "程", "師", "已", "有", "三", "年", "，", "<br>",
+    "主", "要", "熟", "練", "的", "前", "端", "框", "架", "工", "具", "為", "V", "u", "e", "，", "<br>",
+    "後", "端", "程", "式 ", "J", "a", "v", "a", "及 ", "P", "h", "p ", "皆", "有", "進", "行", "合", "作", "/", "獨", "立", "開", "發", "經", "驗", "<br>"]
+}
