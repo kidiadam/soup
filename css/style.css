@@ -1,0 +1,470 @@
+@-webkit-keyframes path1ScrollDown {
+  0% {
+    width: 50%;
+    top: 0;
+    opacity: .4;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    top: 100%;
+  }
+}
+
+@keyframes path1ScrollDown {
+  0% {
+    width: 50%;
+    top: 0;
+    opacity: .4;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    top: 100%;
+  }
+}
+
+@-webkit-keyframes timmer {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 50px);
+  }
+  100% {
+    0 {
+    }
+  }
+}
+
+@keyframes timmer {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 50px);
+  }
+  100% {
+    0 {
+    }
+  }
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+}
+
+html {
+  background: transparent;
+  overflow: -moz-hidden-unscrollable;
+  height: 100%;
+}
+
+html body::-webkit-scrollbar {
+  display: none;
+}
+
+html body {
+  overflow-x: hidden;
+  height: 100%;
+  width: calc(100vw + 18px);
+  overflow: auto;
+  -ms-overflow-style: none;
+  font-family: "Times New Roman", Microsoft JhengHei;
+}
+
+html img {
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+}
+
+#inspire {
+  background: url(../images/bg1.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ece4e4;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: #786a70;
+  -webkit-box-shadow: 0px 3px 15px 5px #868282;
+          box-shadow: 0px 3px 15px 5px #868282;
+}
+
+header .headerNavs {
+  width: 40%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+header .headerNavs > div {
+  width: 33%;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .headerNavs > div:hover {
+  background: #e1acc5;
+  color: black;
+}
+
+header .headerNavs > div.colored {
+  background: #e1acc5;
+  color: black;
+}
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about .profile {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3em;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  position: fixed;
+  top: calc(50% + 40px);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  letter-spacing: 3px;
+  line-height: 2em;
+}
+
+.about .profile::before {
+  background: white;
+  opacity: .8;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.skill {
+  margin-top: 80px;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.skill .skillFrame {
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  padding: 3em;
+}
+
+.skill .skillFrame::before {
+  background: white;
+  opacity: .8;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.skill .skillBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 3%;
+}
+
+#project {
+  margin-top: 80px;
+  width: 100%;
+}
+
+#project .projectFrame {
+  width: 75%;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 3% 0;
+}
+
+#project .projectFrame::before {
+  background: white;
+  opacity: .8;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#project .projectFrame .carouselItem {
+  width: calc((100vw + 18px) * .75 * .45);
+  height: 17vw;
+}
+
+#project .projectFrame img {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#project .projectFrame .projectCard {
+  width: 45%;
+  margin-bottom: 5%;
+  -webkit-box-shadow: 3px 3px 10px 5px #6e6a6a;
+          box-shadow: 3px 3px 10px 5px #6e6a6a;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-next {
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-next span {
+  font-size: 30px;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-next::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background: #dcd0d0;
+  z-index: -1;
+  opacity: .3;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-next:hover::before {
+  opacity: 1;
+  background: white;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-prev {
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-prev span {
+  font-size: 30px;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-prev::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background: #dcd0d0;
+  z-index: -1;
+  opacity: .3;
+}
+
+#project .projectFrame .owl-carousel .owl-nav button.owl-prev:hover::before {
+  opacity: 1;
+  background: white;
+}
+
+#project .projectFrame .cardFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 5% auto auto;
+}
+
+#project .projectFrame .projectBtn-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #859e7e;
+  overflow: hidden;
+}
+
+#project .projectFrame .projectBtn {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 3em;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #859e7e;
+  color: white;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+          mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+          mask-size: 2300% 100%;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+          animation: ani2 0.7s steps(22) forwards;
+}
+
+#project .projectFrame .projectBtn:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+          animation: ani 0.7s steps(22) forwards;
+}
+
+#project .projectFrame .mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 101%;
+  position: absolute;
+  font-size: 1rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

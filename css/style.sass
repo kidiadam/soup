@@ -1,0 +1,248 @@
+$pc: "only screen and (max-width: 1550px)";
+$laptop: "only screen and (max-width: 1080px)";
+$tablet: "only screen and (max-width: 830px)";
+$phone: "only screen and (max-width: 575px)";
+$slim: "only screen and (max-width: 350px)";
+
+@keyframes path1ScrollDown
+  0%
+    width: 50%
+    top: 0
+    opacity: .4
+  15%
+    opacity: 1
+  100%
+    width: 100%
+    top: 100%
+
+@keyframes timmer
+  0%
+    left: 0
+  50%
+    left: calc(100% - 50px)
+  100%
+    0
+
+@keyframes ani
+  from 
+    mask-position: 0 0
+  to 
+    mask-position: 100% 0
+
+@keyframes ani2
+  from 
+    mask-position: 100% 0
+  to 
+    mask-position: 0 0
+
+@mixin bgMask
+  background: white
+  opacity: .8
+  display: block
+  content: ""
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: -1
+@mixin owlNav
+  width: 50px
+  height: 50px
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  z-index: 99
+  display: flex
+  justify-content: center
+  align-items: center
+  span
+    font-size: 30px
+  &::before
+    content: ""
+    display: block
+    position: absolute
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    top: 0
+    left: 0
+    background: #dcd0d0
+    z-index: -1
+    opacity: .3
+  &:hover
+    &::before
+      opacity: 1
+      background: white
+  
+html
+  background: transparent
+  overflow: -moz-hidden-unscrollable
+  height: 100%
+  body::-webkit-scrollbar
+    display: none
+  body
+    overflow-x: hidden
+    height: 100%
+    width: calc(100vw + 18px)
+    overflow: auto
+    -ms-overflow-style: none
+    font-family: "Times New Roman", Microsoft JhengHei
+  img
+    width: 100%
+#app
+  width: 100%
+#inspire
+  background: url(../images/bg1.jpg)
+  background-size: cover
+  background-position: 50% 0%
+  background-repeat: no-repeat
+  background-attachment: fixed
+header
+  width: 100%
+  height: 80px
+  position: fixed
+  top: 0
+  left: 0
+  background: #ece4e4
+  z-index: 99
+  display: flex
+  align-items: center
+  transition: all .5s ease
+  color: #786a70
+  box-shadow: 0px 3px 15px 5px #868282
+  .headerNavs
+    width: 40%
+    margin-left: auto
+    display: flex
+    justify-content: space-evenly
+    font-weight: bold
+    line-height: 80px
+    &>div
+      width: 33%
+      text-align: center
+      cursor: pointer
+      &:hover
+        background: #e1acc5
+        color: black
+      &.colored
+        background: #e1acc5
+        color: black
+    
+.about
+  width: 100%
+  min-height: 100vh
+  .profile
+    width: fit-content
+    padding: 3em
+    font-size: 2rem
+    color: black
+    text-align: center
+    position: fixed
+    top: calc(50% + 40px)
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
+    letter-spacing: 3px
+    line-height: 2em
+    &::before
+      @include bgMask
+
+.skill
+  margin-top: 80px
+  padding-top: 40px
+  width: 100%
+  .skillFrame
+    width: 60%
+    margin: auto
+    position: relative
+    z-index: 0
+    padding: 3em
+    &::before
+      @include bgMask
+  .skillBar
+    display: flex
+    align-items: center
+    align-content: center
+    margin-bottom: 3%
+
+#project
+  margin-top: 80px
+  width: 100%
+  .projectFrame
+    width: 75%
+    margin: auto
+    position: relative
+    z-index: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    padding: 3% 0
+    &::before
+      @include bgMask
+    .carouselItem
+      width: calc((100vw + 18px) * .75 * .45)
+      height: 17vw
+    img
+      cursor: pointer
+      max-width: 100%
+      max-height: 100%
+      position: absolute
+      width: auto
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    .projectCard
+      width: 45%
+      margin-bottom: 5%
+      box-shadow: 3px 3px 10px 5px #6e6a6a
+    .owl-carousel .owl-nav button.owl-next
+      right: 10px
+      @include owlNav
+    .owl-carousel .owl-nav button.owl-prev
+      left: 10px
+      @include owlNav
+    .cardFooter
+      display: flex
+      justify-content: space-between
+      width: 80%
+      margin: 5% auto auto
+    .projectBtn-container
+      width: fit-content
+      height: fit-content
+      position: relative
+      border-radius: 10px
+      border: 1px solid #859e7e
+      overflow: hidden
+    .projectBtn
+      cursor: pointer
+      width: fit-content
+      padding: 1em 3em
+      text-align: center
+      font-size: 1rem
+      font-weight: bold
+      background: #859e7e
+      color: white
+      mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png")
+      mask-size: 2300% 100%
+      animation: ani2 0.7s steps(22) forwards
+      &:hover
+        animation: ani 0.7s steps(22) forwards
+    .mas
+      position: absolute
+      color: #000
+      text-align: center
+      width: 101%
+      position: absolute
+      font-size: 1rem
+      top: 50%
+      transform: translate(0, -50%)
+      overflow: hidden
+
+.text-center
+  text-align: center
+
+
+
+
